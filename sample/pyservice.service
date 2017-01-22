@@ -1,0 +1,10 @@
+[Unit]
+Description = Python service sample
+
+[Service]
+ExecStart = /opt/pyservice/main.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
